@@ -1,0 +1,66 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333;
+}
+
+
+.navbar{
+    height: 56px;
+    background-color: #444;
+    padding:0 40px;
+}
+
+
+.navbar li{
+    float: left;
+    margin: 19px 0;
+}
+
+.navbar li:first-child{
+    margin:4px 0 0 0;
+}
+
+.navbar li:nth-child(2){
+    margin:19px 40px;
+}
+
+.navbar li:nth-child(2) a{
+    background-color: beige;
+    padding:10px;
+    border-radius: 10px;
+    color: red;
+    font-weight: bold;
+    box-shadow: 0 0 5px 2px #111;
+}
+
+.navbar .fa-mobile-alt{
+animation:flash 1s 3;
+padding: 0 3px 0 0;
+}
+
+@keyframes flash{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+.navbar li:nth-child(3){
+    margin:19px 40px 0 0;
+}
+
+.navbar li:nth-child(5){
+    padding:0 5px;
+}
+
+.navbar li:last-child{
+    float: right;
+}
+
+
+.navbar a{
+    color: #bbb;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: white;
+}
