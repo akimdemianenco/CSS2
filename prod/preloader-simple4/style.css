@@ -1,0 +1,32 @@
+body{
+    background-color: #333;
+    perspective:700px;
+}
+
+.boxl{
+    width: 200px;
+    height: 200px;
+    border:10px solid white;
+    margin: 200px auto;
+    transform: rotateY(45deg);
+    animation: rot1 5s 3;
+    perspective:300px;
+}
+
+.boxs{
+    width: 190px;
+    height: 190px;
+    background-color: white;
+    border:5px solid #333;
+    animation: rot2 5s 3;
+}
+
+@keyframes rot1{
+    from{transform: rotateY(45deg)}
+    to{transform: rotateY(405deg)}
+}
+
+@keyframes rot2{
+    from{transform: rotateY(45deg)}
+    to{transform: rotateY(-315deg)}
+}
