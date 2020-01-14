@@ -1,0 +1,28 @@
+body{
+    background-color: #333;
+}
+
+.circle{
+    height: 200px;
+    width: 200px;
+    border: 4px solid white;
+    border-radius: 100%;
+    animation: rot 3s;
+    animation-timing-function: linear;
+}
+
+.dot{
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border: 3px solid yellow;
+    border-radius: 100%;
+    transform:translateY(92px) translateX(-10px);
+
+}
+
+@keyframes rot {
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
+

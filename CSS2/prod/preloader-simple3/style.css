@@ -1,0 +1,34 @@
+body{
+    background-color: #333;
+    perspective:700px;
+}
+
+.box{
+    width: 200px;
+    height:200px;
+    border: 10px solid white;
+    margin: 100px;
+    animation: rot1 5s 3;
+}
+.boxsm{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    transform:translateY(-40px) translateX(-40px);
+    animation: run 5s 3;
+    animation-timing-function: linear;
+}
+
+
+@keyframes run{
+    0%{transform:translateY(-40px) translateX(-40px);}
+    25%{transform:translateY(-40px) translateX(220px);}
+    50%{transform:translateY(220px) translateX(220px);}
+    75%{transform:translateY(220px) translateX(-40px);}
+    100%{transform:translateY(-40px) translateX(-40px);}
+}
+
+@keyframes rot1{
+    from{transform: rotateY(0)}
+    to{transform: rotateY(360deg)}
+}
