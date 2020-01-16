@@ -1,0 +1,73 @@
+body{
+    background-color: #333;
+}
+.slideshow{
+    border: 5px solid black;
+    width: 600px;
+    margin:100px auto;
+    padding: 50px 100px;
+   
+}
+.slideshow img{
+    margin-bottom: -386px;
+     opacity: 0;
+     animation: flash 3s;
+     animation-fill-mode:forwards;
+
+}
+
+.slideshow img:nth-child(2){
+    transform:translateY(-18px);
+    
+    /*animation remains at final stage*/
+    
+    animation-delay:2s;
+}
+.slideshow img:nth-child(3){
+    transform:translateY(-36px);
+    
+    /*animation remains at final stage*/
+    
+    animation-delay:4s;
+}
+.slideshow img:nth-child(4){
+    transform:translateY(-54px);
+    
+    /*animation remains at final stage*/
+    
+    animation-delay:6s;
+}
+.slideshow img:nth-child(5){
+    transform:translateY(-72px);
+    
+    /*animation remains at final stage*/
+    
+    animation-delay:8s;
+}
+.slideshow img:nth-child(6){
+    transform:translateY(-90px);
+    
+    /*animation remains at final stage*/
+    
+    animation-delay:10s;
+}
+.slideshow:hover{
+    border-color: red;
+    opacity:1;
+    animation: flash 1s;
+}
+div{
+    height: 400px;
+}
+@keyframes flash{
+    from{
+opacity: 0;
+    }
+    to{
+opacity: 1;
+    }
+}
+h2 {
+    color:white;
+    text-align: center;
+}

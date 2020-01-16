@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- transform: rotate(), translate(), scale(), skew()-->
+    <!-- box-shadow: 5 parameters-->
+    <!-- img:hover pseudoselector for mouse hover-->
+
+ <title>global css images</title> <!-- name in browser tab and for search engines-->
+ <link rel="icon" href="http://icons.iconarchive.com/icons/martz90/circle/64/camera-icon.png"> <!-- icon in browser tab -->
+ <style>
+ body{
+background-color: #333;
+ }
+
+ #container{
+     border-bottom: 10px solid chocolate;
+     text-align: center;
+     padding-bottom: 50px;
+     padding-top: 25px;
+ }
+ img{
+     margin-left: -127px;
+     margin-right: -127px;
+     border: 5px solid rgb(45, 176, 228);
+     padding: 10px;
+     background-color: rgb(145, 150, 75);
+     box-shadow: 0 0 5px 3px #111;
+     transition:0.3s; 
+ }
+
+ .i1{
+     transform: rotate(45deg);
+ }
+
+ .i2{
+     transform: rotate(60deg);
+
+ }
+ .i3{
+     transform: rotate(75deg);
+ }
+ .i4{
+     transform: rotate(90deg);
+ }
+ .i5{
+     transform: rotate(105deg);
+ }
+img:hover{
+    border-color: aquamarine;
+    transform:rotate(360deg);
+}
+ 
+ </style>
+</head>
+<body>
+    <div id="container">
+        <img class="i1" src="https://picsum.photos/id/419/250/500" alt="">
+        <img class="i2" src="https://picsum.photos/id/419/250/500" alt="">
+        <img class="i3" src="https://picsum.photos/id/419/250/500" alt="">
+        <img class="i4" src="https://picsum.photos/id/419/250/500" alt="">
+        <img class="i5" src="https://picsum.photos/id/419/250/500" alt="">
+    </div>
+    
+</body>
+</html>

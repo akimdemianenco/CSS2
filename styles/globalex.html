@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    --/--<title>global styles</title> - document title in browser tab and search engines, simple text
+    <link rel="role" href="url"> ---/--
+
+    
+   <style>
+   /* GLOBAL STYLES
+   tag selector
+   */
+body{
+    background-color: #333;
+    width:360px;
+
+}
+p{
+    background-color: #ffffff; 
+    width: 100px; 
+    height: 100px;
+    float: left;
+    margin: 10px;
+}
+
+/* class selector
+class naming a..zA..Z0..9-_
+*/
+
+.row{
+    background-color: brown;
+
+}
+.col{
+border-radius: 50px;
+}
+
+.toprrot{
+    border-radius: 0 50px 0 0;
+}
+
+.botlrot{
+    border-radius: 0 0 0 50px;
+}
+
+/* id selector*/
+#first{
+    border-radius: 50px 0 0 0;
+}
+#ninth{
+    border-radius: 0 0 50px 0;
+}
+
+
+   </style>
+</head>
+<body>
+    <p id="first">1</p>
+    <p class="col">2</p>
+    <p class="toprrot">3</p>
+    <p class="row">4</p>
+    <p class="row col">5</p>
+    <p class="row">6</p>
+    <p class="botlrot">7</p>
+    <p class="col">8</p>
+    <p id="ninth">9</p>
+</body>
+</html>

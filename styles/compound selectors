@@ -1,0 +1,51 @@
+COMPOUND/ ADVANCED
+
+- formulas -> combine selectors
+
+*grouping
+
+sel1, sel2, sel3, ...{}
+
+p, a, li, .first, :hover{
+    color: red;
+}
+
+*direct descendant
+exact ierarchy path
+
+sel1>sel2>sel3{ 
+}
+
+*descendant / context
+approximative ierarchy path
+
+sel1 sel2 sel3 {
+
+}
+
+*intersection / combine
+
+sel1sel2sel3 {
+
+}
+img:hover {
+
+}
+
+*next neighbour / next sibling
+
+sel1+sel2+sel3 {
+
+}
+
+*attribute selectors
+
+[attribute="value"]{
+
+}
+
+*universal / all
+
+* {
+    
+}

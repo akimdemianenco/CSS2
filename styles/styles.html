@@ -1,0 +1,54 @@
+page.html ----> style.css
+
+style.css
+
+selector1{
+    propr:val;
+}
+
+selector2{
+propr: val;
+}
+
+page.html
+----------
+head
+--> <link rel="stylesheet" href="style.css" />
+
+CSS PRIORITY/ CSS SPECIFICITY
+
+1. element <----- style1, style2, style3
+same weight (tag vs tag, class vs class, id. vs id)
+
+li{
+    color:red;
+}
+
+li{
+    color: green;
+
+}
+
+LAST - WINS
+
+----------
+.first{
+    color:white;
+}
+
+.texts{
+    color:green;
+}
+
+SIMPLE PRIORITY RULE
+inline>#id>.class>:pseudo>tag>parent>default
+
+The more specificity the more PRIORITY
+
+COMPLEX Selectors inline 1000 id 100 class 10 element 1
+
+#container .content .col p{}
+//121 weight
+
+#container div .col p{}
+//112 weight

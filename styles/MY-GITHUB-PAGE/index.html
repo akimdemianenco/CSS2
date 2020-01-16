@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--getavataars.com-->
+    <title>My profile - Akim Demianenco</title>
+    <link rel="icon" href="images/icon.ico">
+
+    <style>
+    
+    body{
+        background-color:brown;
+        margin: 5%;
+    }
+
+   
+    img{
+        width: 250px;
+    }
+
+    .col-right{
+        background-color:#999999;
+        padding:5px;
+    }
+    
+    .col-left{
+        background-color: #444444;
+        float: left;
+        padding: 40px;
+        margin-right: 3%;
+        border-right: 1px solid black;
+    }
+
+    h2{
+        padding-top: 20px;
+        color: burlywood;
+        margin-bottom:1px;
+        
+    }
+
+    h3{
+      color: burlywood;
+      margin-top: 1px;
+    }
+    ul{
+        list-style: none;
+    }
+
+    a{
+        color: beige;
+    }
+    a:hover{
+        color: chartreuse;
+    }
+
+
+    .avatar{
+
+        border-radius: 50%;
+        border:5px solid white;
+        animation: rot 3s;
+
+
+    }
+
+    .call{
+        background-color: #173232;
+        padding:5px;
+        border-radius: 50px;
+        animation:pulse 0.5s 6;
+        animation-delay:1s;
+    }
+
+
+    @keyframes rot{
+        from{transform: translateX(-1000px) rotate(0deg);}
+        to{ transform: translateX(0px)rotate(720deg);}
+    }
+    
+     @keyframes pulse{
+        from{background-color: blue;}
+        to{background-color: blueviolet; }
+    }
+
+
+    </style>
+
+</head>
+<body>
+
+    <main id="content">
+
+        <div class="col-left">
+
+            <img class="avatar" src="images/avatar.png" alt="Demianenco A.">
+            <h2 style="border-top: 0.5px solid black;"
+            >Demianenco A.</h2>
+            <h3>Student</h3>
+
+        </div>
+        
+        <div class="col-right">
+<h2>My Projects</h2>
+<ul>
+    <li><a href="https://github.com/akimdemianenco/css/blob/master/styles/methods/pseudosmile.html" target="_blank" rel="noopener noreferrer">Smile in CSS</a></li>
+    <li><a href="http://" target="_blank" rel="noopener noreferrer">Menu</a></li>
+    <li><a href="http://" target="_blank" rel="noopener noreferrer">Order</a></li>
+</ul>
+<p>
+    <a class="call" href="tel:+123456789">Call:123 456789</a>
+</p>
+
+        </div>
+
+    </main>
+    
+</body>
+</html>
