@@ -1,0 +1,56 @@
+body{
+    background-color: #333;
+}
+
+/*
+1em   = 100% x font-size current element
+1.5em = 150% x font-size current element
+*/
+
+#contacts{
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    overflow: hidden; /*hide all elements outside border*/
+    padding: 0.2em;
+
+}
+
+#contacts:hover li{
+    transform: translateY(0);
+    transition: 1s; /* smoothing of translate*/
+}
+
+#contacts li{
+transform: translateY(9.9em);
+transition: 1s;
+}
+
+a{
+    background-color: orange;
+    display: block; /*display text as blocks*/
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    color: #333;
+    margin-bottom: 0.3em;
+    text-align: center;
+    line-height: 3em;
+    box-shadow: 0.2em 0.2em #222;
+
+}
+
+ul :last-child a{
+    margin-bottom: 0;
+    color: orange;
+    background-color: black;
+    border: 0.1em solid orange;
+    height: 2.9em;
+    width: 2.9em;
+}
+
+
+
+
+
+
