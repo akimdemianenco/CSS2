@@ -1,0 +1,64 @@
+#movie{
+    background-color: #222;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/bg.png);
+    /*background-repeat: no-repeat;*/
+}
+
+#movie .wrapper{
+    /*background-color: blue;*/
+    height: 30vh;
+    width: 30vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: calc(33vw - 15vh);/* space!!!*/
+    border-radius: 50%;
+    background-image: linear-gradient(110deg,black,rgb(43, 51, 90));
+    box-shadow: 5px 5px 5px;
+
+}
+
+#movie .film{
+    background-color: blue;
+    width: calc((100vh/3 + 2vh) * 7);
+    height: 22vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: calc(-33vw + 15vh);
+    border-image: radial-gradient(red, white);
+    border-style: image;
+  
+
+}
+
+#movie img{
+    height: 20vh;
+    padding: 1vh;
+}
+
+#movie .controls{
+    /*background-color: red;*/
+    height: 25vh;
+    width: 25vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: +1;
+    text-align: center;
+    border-radius: 50%;
+    background-image: linear-gradient(120deg, rgba(43,51,90,0.6),rgba(15, 20, 46, 0.8))
+
+}
+
+.controls i{
+    font-size: 5vh;
+    line-height: 25vh;   
+}
