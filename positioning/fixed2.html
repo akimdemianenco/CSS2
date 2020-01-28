@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>absolute2</title>
+    <style>
+        body {
+            height: 2000px;
+
+            background-color: #333;
+        }
+
+        #small {
+            height: 100px;
+            width: 100px;
+            /*if parent is static, child positioning is measured from display window; if parent is not static (relative, absolute, ..) child positioning is measured from this non-static parent*/
+            background-color: green;
+            position: fixed;/*measured as absolute, but independent from parent and scroll/zoom*/
+            bottom: 0;
+            right: 0;
+
+        }
+
+        #medium {
+            height: 200px;
+            width: 200px;
+            background-color: tan;
+        }
+
+        #big {
+            height: 300px;
+            width: 300px;
+            background-color: turquoise;
+            position: relative;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="big">
+        <div id="medium">
+            <div id="small"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

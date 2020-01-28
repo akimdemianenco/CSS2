@@ -1,0 +1,72 @@
+body{
+    background-color: #111;
+    font-family: 'Roboto', sans-serif;
+}
+
+#app {
+    width: 720px;
+    height: 1440px;
+    background-color: #222333;
+}
+
+#app .contact img{
+    width: 120px;
+}
+
+.contact{
+    border-bottom: 1px solid #333;
+    padding: 5px;
+}
+
+ul .contact:first-child{
+    border-top: 1px solid #333;
+}
+
+#app .contact h2{
+    color: white;
+    font-size: 2em;
+    padding-left: 1em;
+}
+
+#app .contact p{
+    color: #555;
+    font-size: 1.5em;
+    border: 1px dotted white;
+    padding-left: 1em;
+    height: 2.1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+li div:last-child{
+    float: right;
+    padding: 5px;
+}
+
+time{
+    color: #555;
+}
+
+.autor{
+    color: white;
+}
+
+div .fas.fa-check{
+    color: purple;
+}
+
+div i:first-child{
+    position: relative;
+    left: 5px;
+}
+
+div:first-of-type{
+    background-color: orange;
+    width: 30em;
+}
