@@ -1,0 +1,74 @@
+body{
+    background-color: #333;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.navbar{
+background-color:rgb(248, 172, 116);
+display: table;
+width: 90%;
+margin-left: 5%;
+margin-top: 2em;
+
+}
+.navbar ul{
+    display: table-row;
+}
+
+.navbar ul li{
+    display: table-cell;
+    vertical-align: middle;
+    border-right: 1px solid #333;
+}
+
+.navbar ul li a{
+    color: #222;
+    text-decoration: none;
+    text-align: center;
+    padding: 1.5em;
+    display: block;
+}
+
+ul li:first-child{
+    position: relative;
+}
+
+
+ul li:first-child a{
+    width: 96px;
+    text-align: left;
+}
+
+ul li:first-child a img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+.navbar li:last-child{ /* hide burger menu on wider than 1000px displays*/
+    display:none;
+}
+
+.navbar li:last-child img{ /*svg 24px made smaller than height of the rest of text - <18px*/
+    height: 0.8em;
+}
+
+/*adaptive for small screens*/
+
+@media (max-width:1000px){
+    .navbar li:nth-child(2),
+    .navbar li:nth-child(3),
+    .navbar li:nth-child(4){display:none;} 
+
+    .navbar li:last-child{display:table-cell;}
+}
+
+/*
+for displays less than 1000px display small logo
+
+- <picture> html5 + <img>
+- attention to selectors!
+*/
+
