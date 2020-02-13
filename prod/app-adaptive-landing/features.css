@@ -1,0 +1,113 @@
+/*http://html.dynamiclayers.net/at/appico/index.html*/
+
+body{
+    background-color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*common styles*/
+
+.container{
+    width: 1140px;
+    margin: auto;
+    background-color: red;
+}
+
+.tr{
+    text-align: right
+}
+
+.tl{
+    text-align: left;
+}
+
+.tc{
+    text-align: center;
+}
+
+/*section specific styles*/
+
+#features .table{
+    display: table;
+
+}
+
+#features .table .row{
+    display: table-row;
+    
+}
+
+#features .table .row >*{           /*select everything one level below*/
+    display: table-cell;
+    background-color: yellow;
+    vertical-align: top;
+}
+
+#features .table .row ul{
+    width: 30%;
+}
+
+#features .table .row ul h2{
+    margin-bottom: 2em;
+    font-size: 1.2em;
+}
+
+#features .table .row ul li::before{
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 3.2em;
+    
+}
+
+#features .table .row ul:first-child li:nth-child(1)::before{
+background-image: url(img/device.svg);
+right: -1.5em;
+}
+
+#features .table .row ul:first-child li:nth-child(2)::before{
+background-image: url(img/board.svg);
+right: -1.5em;
+}
+
+#features .table .row ul:first-child li:nth-child(3)::before{
+background-image: url(img/language.svg);
+right: -1.5em;
+}
+
+#features .table .row ul:last-child li:nth-child(1)::before{
+background-image: url(img/touch.svg);
+left: -1.5em;
+}
+
+#features .table .row ul:last-child li:nth-child(2)::before{
+background-image: url(img/emo.svg);
+left: -1.5em;
+}
+
+#features .table .row ul:last-child li:nth-child(3)::before{
+background-image: url(img/chat.svg);
+left: -1.5em;
+}
+
+/*
+#features .table .row ul:first-child{
+    text-align: right;
+}
+
+#features .table .row ul:last-child{
+    text-align: left;
+}
+*/
+
+#features .table .row div{
+    width: 40%;
+    text-align: center;
+}
+
+#features .table .row div img{
+    width: 80%;
+}
+
