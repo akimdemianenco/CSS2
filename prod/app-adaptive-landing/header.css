@@ -1,0 +1,98 @@
+body{
+    background-color: #333;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+#hero{
+    color: white;
+}
+
+.container{
+    width: 1140px;
+    margin: auto;
+}
+
+.bgimage{
+    background: linear-gradient(#005beabb,#005beabb), url(img/hero.jpg);
+    background-size: cover;
+
+}
+
+#hero .left, #hero .right{
+    display: inline-block;
+    width: 48%;
+    background-color:;
+    vertical-align: middle;
+}
+
+#hero .right{
+    text-align: right;
+}
+
+#hero .left h1{
+    font-size: 3em;
+    font-weight: 900;
+    margin-bottom: 0.5em;
+
+}
+
+#hero .left p{
+    margin-bottom: 1em;
+}
+
+#hero .left .btnwire{
+    display: inline-block;
+    padding: 1em 1.5em 1em 1.5em;
+    border-radius: 25px;
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    font-weight: 700;
+}
+
+#hero .left .btnwire:hover{
+    
+    background-color: #005beabb;
+    border: 1px solid #005beabb;  
+}
+
+.btnwire::before{
+    content:"";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url(img/download.svg);
+    background-size: contain;
+    filter: invert(100%);
+    margin: 0.2em;
+
+}
+
+
+
+
+#hero img{
+    height: 80vh;
+    
+    
+}
+
+
+
+@media (max-width:1170px) {
+.container{ width: 900px;}
+}
+
+@media (max-width:930px){
+    .container{
+        width: 80%;
+    }
+    #hero .right{
+        display: none;
+    }
+    #hero .left{
+        width: 100%;
+        padding: 20vh 0 20vh 0;
+    }
+}
