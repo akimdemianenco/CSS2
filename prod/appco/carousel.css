@@ -1,0 +1,53 @@
+body{
+    background-color: #333;
+}
+
+.screenshots img{
+    transform: scale(0.9);
+    border-radius: 25px;
+}
+
+.screenshots::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 288px;
+    height: 480px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+    background-image: url(img/frame2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.screenshots .owl-item.active.center img{
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.container{
+    width: 95vw;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+@media (max-width:1140px){
+    .container{
+        width: 800px;
+    }
+}
+
+@media (max-width:800px){
+    .container{
+        width: 96%;
+    }
+    .screenshots::before{
+        display: none;
+    }
+}
+
