@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variables example</title>
+    <style>
+    /*declare variables*/
+
+    :root{
+        --color: cyan;
+        --bgcolor: #333;
+        --size: 2em;
+        --font: Arial;
+
+        --mobile:1000px;
+    }
+
+    button{
+        background-color:var(--bgcolor);
+        font-family: var(--font);
+        padding: var(--size);
+        color: var(--color);
+        font-size:calc(0.7*var(size));
+    }
+
+    @media (max-width: var(--mobile)){
+        button span{
+            display: none;
+        }
+    }
+
+
+    </style>
+</head>
+<body>
+
+    <button>1.5K <span>likes</span></button>
+    
+</body>
+</html>

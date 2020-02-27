@@ -1,0 +1,18 @@
+CSS variables - custom properties, memory cells which can store and change values.
+
+body{
+    --whatever-i-want: 100px;
+
+    example:
+
+    --size:100px;
+}
+
+div{
+    width: var(--size);
+    height: var(--size);
+}
+
+ul{
+    font-size: var(--size);
+}

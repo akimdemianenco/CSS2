@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  background: #333;
+  color: orange;
+}
+
+#fan {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#fan:hover li:nth-child(1) {
+  -webkit-transform: rotate(-7.5deg);
+          transform: rotate(-7.5deg);
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+#fan:hover li:nth-child(2) {
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+#fan:hover li:nth-child(3) {
+  -webkit-transform: rotate(-22.5deg);
+          transform: rotate(-22.5deg);
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+#fan:hover li:nth-child(4) {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+#fan:hover li:nth-child(5) {
+  -webkit-transform: rotate(-37.5deg);
+          transform: rotate(-37.5deg);
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+#fan:hover li:nth-child(6) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+#fan:hover li:nth-child(7) {
+  -webkit-transform: rotate(-52.5deg);
+          transform: rotate(-52.5deg);
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+#fan:hover li:nth-child(8) {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+#fan:hover li:nth-child(9) {
+  -webkit-transform: rotate(-67.5deg);
+          transform: rotate(-67.5deg);
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+#fan:hover li:nth-child(10) {
+  -webkit-transform: rotate(-75deg);
+          transform: rotate(-75deg);
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+#fan:hover li:nth-child(11) {
+  -webkit-transform: rotate(-82.5deg);
+          transform: rotate(-82.5deg);
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+#fan:hover li:nth-child(12) {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+#fan li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  padding: 1.5em;
+  position: absolute;
+  background-color: #333;
+  width: 37.5em;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 4.5em;
+  border: 1px solid green;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  border-radius: 50% 100px 75px 50%;
+  text-align: right;
+}
+
+#fan li::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 1.5em;
+  width: 1.5em;
+  right: 95%;
+  top: 39.5%;
+  border: 1px solid black;
+  border-radius: 50px;
+  background-color: #333;
+  -webkit-box-shadow: 2px 2px #262626;
+          box-shadow: 2px 2px #262626;
+}
+
+#fan li:nth-child(1) {
+  background-color: #383838;
+  color: #f09b00;
+  -webkit-box-shadow: 0 0 0.3em 0.15em #343434;
+          box-shadow: 0 0 0.3em 0.15em #343434;
+}
+
+#fan li:nth-child(2) {
+  background-color: #3d3d3d;
+  color: #e09100;
+  -webkit-box-shadow: 0 0 0.3em 0.15em #363636;
+          box-shadow: 0 0 0.3em 0.15em #363636;
+}
+
+#fan li:nth-child(3) {
+  background-color: #424242;
+  color: #d18700;
+  -webkit-box-shadow: 0 0 0.3em 0.15em #373737;
+          box-shadow: 0 0 0.3em 0.15em #373737;
+}
+
+#fan li:nth-child(4) {
+  background-color: #474747;
+  color: #c27d00;
+  -webkit-box-shadow: 0 0 0.3em 0.15em #383838;
+          box-shadow: 0 0 0.3em 0.15em #383838;
+}
+
+#fan li:nth-child(5) {
+  background-color: #4d4d4d;
+  color: #b37400;
+  -webkit-box-shadow: 0 0 0.3em 0.15em #393939;
+          box-shadow: 0 0 0.3em 0.15em #393939;
+}
+
+#fan li:nth-child(6) {
+  background-color: #525252;
+  color: #a36a00;
+  -webkit-box-shadow: 0 0 0.3em 0.15em #3b3b3b;
+          box-shadow: 0 0 0.3em 0.15em #3b3b3b;
+}
+
+#fan li:nth-child(7) {
+  background-color: #575757;
+  color: #946000;
+  -webkit-box-shadow: 0 0 0.3em 0.15em #3c3c3c;
+          box-shadow: 0 0 0.3em 0.15em #3c3c3c;
+}
+
+#fan li:nth-child(8) {
+  background-color: #5c5c5c;
+  color: #855600;
+  -webkit-box-shadow: 0 0 0.3em 0.15em #3d3d3d;
+          box-shadow: 0 0 0.3em 0.15em #3d3d3d;
+}
+
+#fan li:nth-child(9) {
+  background-color: #616161;
+  color: #754c00;
+  -webkit-box-shadow: 0 0 0.3em 0.15em #3e3e3e;
+          box-shadow: 0 0 0.3em 0.15em #3e3e3e;
+}
+
+#fan li:nth-child(10) {
+  background-color: #666666;
+  color: #664200;
+  -webkit-box-shadow: 0 0 0.3em 0.15em #404040;
+          box-shadow: 0 0 0.3em 0.15em #404040;
+}
+
+#fan li:nth-child(11) {
+  background-color: #6b6b6b;
+  color: #573800;
+  -webkit-box-shadow: 0 0 0.3em 0.15em #414141;
+          box-shadow: 0 0 0.3em 0.15em #414141;
+}
+
+#fan li:nth-child(12) {
+  background-color: #707070;
+  color: #472e00;
+  -webkit-box-shadow: 0 0 0.3em 0.15em #424242;
+          box-shadow: 0 0 0.3em 0.15em #424242;
+}
+
+#fan h2, p {
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */

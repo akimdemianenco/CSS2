@@ -1,0 +1,54 @@
+$lcol: green;
+$dcol: #333;
+$size: 100px;
+
+// mixins - a table of styles which can be included in multiple places//
+@mixin center{
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+}
+
+
+body{
+    background-color: $dcol;
+}
+
+#preloader{
+    height: $size;
+    width: $size;
+    background-color: darken($lcol, 10%);
+    position: absolute;
+    @include center; //include mixin//
+
+    div{      //incorporated selector//
+    height: $size*0.3;
+    width: $size*0.3;
+    background-color: $lcol;
+    float: left;
+    margin-left: $size*0.025;
+    margin-top: $size*0.025;
+    // margin:$size/6; //
+    
+    @for $n from 1 through 9{
+    // repetitive and conditional constructs
+    // @for $n from 1 through 9{ &:nth-child(#{$n}){...}
+
+    &:nth-child(#{$n}){                  // & stick selector with parent//
+    animation: flash 5s infinite;
+    animation-delay: $n*0.1s;
+    }
+    }
+    
+    
+
+    @keyframes flash{
+        from{opacity: 0;}
+        to{opacity: 1;}
+        
+    }
+    }
+
+}

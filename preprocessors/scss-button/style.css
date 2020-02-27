@@ -1,0 +1,25 @@
+body {
+  color: red;
+  background-color: white;
+  margin: 100px;
+}
+
+button {
+  height: 75px;
+  width: 75px;
+  font-size: 18.75px;
+  border-radius: 37.5px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f0c4c4), color-stop(#912525), to(#f0c4c4));
+  background-image: linear-gradient(#f0c4c4, #912525, #f0c4c4);
+  color: white;
+  border: 3px solid lightgreen;
+  -webkit-box-shadow: 0 0 5px 2px gray;
+          box-shadow: 0 0 5px 2px gray;
+}
+
+button:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#912525), color-stop(#f0c4c4), to(#912525));
+  background-image: linear-gradient(#912525, #f0c4c4, #912525);
+  border-color: darkgreen;
+}
+/*# sourceMappingURL=style.css.map */
