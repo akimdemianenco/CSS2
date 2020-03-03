@@ -1,0 +1,11 @@
+CSS Flex box - 2017+ first flexible technology
+- parent (container) / child (items)
+- 2 axis: main (horizontal), cross (vertical)
+- direction(row, column)
+- direction(direct/reverse)
+- start, end (not left-right)
+- alignment: space-around, space-between, space-evenly, stretch
+- order (like z-index)
+- grow/shrink + shows proportions
+- +position, +inline-block, ...
+- wrap

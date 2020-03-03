@@ -1,0 +1,38 @@
+#navbar {
+  background-color: #4caf50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navbar ul:first-child {
+  margin-left: 5em;
+}
+
+#navbar ul:last-child {
+  margin-right: 5em;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
