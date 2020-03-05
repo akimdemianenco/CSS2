@@ -1,0 +1,13 @@
+CSS native GRID
+- flexible table
+- common with flexbox (spacing, alignment, start, end, axis, container/items...)
+- container (cols + rows) <---- items in celules
+- !templates (row, cols, areas)
+- !unit fr - fraction/proportions
+- !functions repeat(...), minmax(...)
+- !gap - like margin between rows in columns
+- h/v - symmetric
+- !display:content NEW (works in firefox only) excludes intermediary children
+
+CSS Grid Garden
+MDN web docs
