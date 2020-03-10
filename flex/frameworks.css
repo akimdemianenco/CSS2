@@ -1,0 +1,27 @@
+fonts - libraries
+animations / effects - libraries
+icons - libraries
+-------
+bootstrap - frameworks
+material - framework
+foundation - framework
+semantic ui - framework
+w3.css - framework
+
+- components (common: navbar, carousel, lists, tables, forms, grid (not css),...)
+- best practices
+- popularity / documentation / tutorials
+- cross - compatibility with older browsers
+- adaptive / responsive
+- + javascript components
+---------
+
+- attention to components : parent > child
+- attention to class NAMES : schemas
+- attention to attributes: id, href, data-* <<< javascript
+- dynamic classes
+- grid
+- adaptive suffixes(-xs, -s, -md, -lg, -xl)
+
+getboostrap.com
+bootsnipp.com 
